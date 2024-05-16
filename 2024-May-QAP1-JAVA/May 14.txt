@@ -1,0 +1,163 @@
+// Dave Husk
+// Keyin College
+// Software Development
+// May 2024
+
+// Exercise 1: Hospital Management System
+
+// Classes:
+// 1. Nurse
+// 2. Drug
+// 3. Equipment
+// 4. Ward
+// 5. Operating Theater (OT)
+
+// Attributes and Behaviors:
+
+// Doctor:
+// - Attributes: `name`, `specialization`, `employeeId`
+// - Behaviors: `diagnose()`, `prescribe()`, `performSurgery()`
+
+// Patient:
+// - Attributes: `name`, `age`, `patientId`, `medicalHistory`
+// - Behaviors: `admit()`, `discharge()`, `receiveTreatment()`
+
+// Exercise 2: The Rectangle Class
+
+// Rectangle.java
+public class Rectangle {
+    private double length;
+    private double width;
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    public double getArea() {
+        return length * width;
+    }
+
+    public double getPerimeter() {
+        return 2 * (length + width);
+    }
+}
+
+// TestRectangle.java
+public class TestRectangle {
+    public static void main(String[] args) {
+        Rectangle rect1 = new Rectangle(5, 3);
+        Rectangle rect2 = new Rectangle(7, 4);
+
+        System.out.println("Rectangle 1 Area: " + rect1.getArea());
+        System.out.println("Rectangle 1 Perimeter: " + rect1.getPerimeter());
+
+        System.out.println("Rectangle 2 Area: " + rect2.getArea());
+        System.out.println("Rectangle 2 Perimeter: " + rect2.getPerimeter());
+    }
+}
+
+// Exercise 3: The Employee Class
+
+// Employee.java
+public class Employee {
+    private String name;
+    private double salary;
+
+    public Employee(String name, double salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public double getAnnualSalary() {
+        return salary * 12;
+    }
+
+    public void raiseSalary(double percent) {
+        salary += salary * percent / 100;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+}
+
+// TestEmployee.java
+public class TestEmployee {
+    public static void main(String[] args) {
+        Employee john = new Employee("John", 4500);
+        Employee james = new Employee("James", 5000);
+
+        System.out.println("John's Annual Salary: " + john.getAnnualSalary());
+        System.out.println("James' Annual Salary: " + james.getAnnualSalary());
+
+        john.raiseSalary(20);
+        james.raiseSalary(20);
+
+        System.out.println("John's New Salary: " + john.getSalary());
+        System.out.println("James' New Salary: " + james.getSalary());
+    }
+}
+
+/// Exercise 4: The InvoiceItem Class
+
+// Invoice.java
+
+public class Invoice {
+    private static int invoiceCount = 0;
+    private String id;
+    private String description;
+    private int quantity;
+    private double unitPrice;
+
+    public Invoice(String id, String description, int quantity, double unitPrice) {
+        this.id = id;
+        this.description = description;
+        this.quantity = quantity;
+        this.unitPrice = unitPrice;
+        invoiceCount++;
+    }
+
+    public Invoice(Invoice other) {
+        this.id = other.id;
+        this.description = other.description;
+        this.quantity = other.quantity;
+        this.unitPrice = other.unitPrice;
+        invoiceCount++;
+    }
+
+    public double getTotal() {
+        return quantity * unitPrice;
+    }
+
+    public static int getInvoiceCount() {
+        return invoiceCount;
+    }
+
+    @Override
+    public String toString() {
+        return "Invoice ID: " + id + ", Description: " + description + ", Quantity: " + quantity + ", Unit Price: " + unitPrice + ", Total: " + getTotal();
+    }
+}
+
+// TestInvoice.java
+
+public class TestInvoice {
+    public static void main(String[] args) {
+        Invoice invoice1 = new Invoice("1", "Laptop", 2, 1500);
+        Invoice invoice2 = new Invoice("2", "Mouse", 5, 25);
+        Invoice invoice3 = new Invoice("3", "Keyboard", 3, 45);
+        Invoice invoice4 = new Invoice(invoice3);
+
+        System.out.println(invoice1);
+        System.out.println(invoice2);
+        System.out.println(invoice3);
+        System.out.println(invoice4);
+
+        System.out.println("Total number of invoices: " + Invoice.getInvoiceCount());
+    }
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Web Design Semester 1 Comprehensive Example</title>
+    <style>
+       /* Root-level CSS Variables */
+
+       /* Color Palette */
+       :root {
+            --primary-color: #3498db;        /* Primary brand color */
+            --secondary-color: #ecf0f1;      /* Secondary color */
+            --text-color: #333;              /* Main text color */
+            --text-light: #aaa;              /* Light text color */
+            --bg-color: #f5f5f5;             /* Background color */
+            --error-color: #e74c3c;          /* Error state color */
+            --success-color: #2ecc71;        /* Success state color */
+        }
+
+        /* Typography */
+        :root {
+            --font-family: "Arial, sans-serif";  /* Base font family */
+            --font-size: 16px;                   /* Base font size */
+            --line-height: 1.5;                  /* Base line height */
+        } 
+
+        /* Spacing and Layout */
+        :root {
+            --container-width: 1200px;          /* Max width of main container */
+            --gutter-space: 16px;                /* Space between grid items */
+            --header-height: 60px;              /* Fixed header height */
+            --footer-height: 40px;              /* Fixed footer height */
+        }
+  
+        /* Breakpoints for Responsive Design */
+        :root {
+            --breakpoint-sm: 576px;             /* Small screen breakpoint */
+            --breakpoint-md: 768px;             /* Medium screen breakpoint */
+            --breakpoint-lg: 992px;             /* Large screen breakpoint */
+            --breakpoint-xl: 1200px;            /* Extra large screen breakpoint */
+        }
+
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+        }
+
+        /* Container for Flexbox and Grid */
+        .flex-container, .grid-container {
+            padding: 16px;
+            border-color: 1px black;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Flexbox Layout */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            
+        }
+        .flex-item {
+            flex: 1;
+            padding: 16px;
+            background-color: #ccc;
+            text-align: center;
+        }
+
+        /* Grid Layout */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+        button:hover {
+          background-color: var(--primary-color);
+          color: silver;
+        }
+
+        /* Code Snippet Styles */
+        pre {
+            background-color: #2d2d2d;
+            border: 1px solid #333;
+            padding: 10px;
+            border-radius: 5px;
+            color: #fff;
+            overflow: hidden;
+            position: relative;
+            margin:20px;
+            border: 1px solid black;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="flex-container">
+        <h1>Web Design 101</h1>
+    </header>
+    <main>
+    <div class="grid-container">
+
+      <!-- Semantic Tags Section -->
+      <section>
+          <h2>Semantic Tags</h2>
+          <pre>
+          &lt;header&gt;&lt;p&gt;This is a header.&lt;/p&gt;&lt;/header&gt;<br>
+          &lt;nav&gt;&lt;p&gt;This is a navigation.&lt;/p&gt;&lt;/nav&gt;<br>
+          &lt;main&gt;&lt;p&gt;This is the main content.&lt;/p&gt;&lt;/main&gt;<br>
+          &lt;footer&gt;&lt;p&gt;This is a footer.&lt;/p&gt;&lt;/footer&gt;
+      </pre>
+      </section>
+      <!-- End of Semantic Tags Section -->
+  
+      <!-- Flexbox Section -->
+      <section class="flex-container">
+       <h2>Flexbox</h2>
+       <div class="flex-item">
+        <!-- CSS Variables Section -->
+        <section>
+        <h2>CSS Variables</h2>
+        <p style="color: var(--primary-color);">This text uses the primary color defined in CSS variables.</p>
+        </section>
+        <!-- End of CSS Variables Section -->
+        </div>
+
+             <div class="flex-item">
+            <!-- Responsive Design Example -->
+             <section>
+            <h2>Responsive Design</h2>
+            <p>Resize the window to see the grid adapt.</p>
+        </section>
+          </div>
+          <div class="flex-item">Item 3</div>
+      </section>
+      <!-- End of Flexbox Section -->
+  
+
+  
+      <!-- Image Section -->
+      <section class="flex-container">
+          <h2>Image</h2>
+          <img src="https://keyin.com/assets/KeyinNavLogo-8036d560.png" style="width:200px;" alt="Example image" aria-label="Example image">
+      </section>
+      <!-- Inline Image Wrapping Section -->
+      <section style="box-shadow: 0 4px 8px rgba(0,1,5,0.4); padding: 16px;">
+            <h2>Inline Image Wrapping</h2>
+            <p style="float: left; margin-left: 16px;">Text to the LEFT.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSR67eYiiC4DvgSQrNQCSzgBTJvt9igBZBdH0_gXPaQA&s" alt="Example" style="float: left; margin-right: 16px;">
+            <p style="float: right; margin-right: 16px;">Inline. To the right unless you resize the window :-P</p>
+      </section>
+      <!-- End of Image Section -->
+  
+      </div>
+
+      <!-- Main Content -->
+      <div>
+
+
+        <!-- Grid Example -->
+        <section class="flex-container">
+                    <!-- Flexbox Example -->
+            <h2>Flexbox Layout</h2>
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </section>
+        <pre>
+            &lt;div class="flex-container"&gt;
+            &lt;div class="flex-item"&gt;Item 1&lt;/div&gt;
+            &lt;div class="flex-item"&gt;Item 2&lt;/div&gt;
+            &lt;div class="flex-item"&gt;Item 3&lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+            <h2>Grid Layout</h2>
+            <div>Item 1</div>
+            <pre>
+                  &lt;div class="grid-container"&gt;
+                  &lt;div&gt;Item 1&lt;/div&gt;
+                  &lt;div&gt;Item 2&lt;/div&gt;
+                  &lt;/div&gt;
+              </pre>
+        </section>
+
+
+
+              <!-- Hover Effects Section -->
+            <section class="flex-container" style="box-shadow: 0 4px 8px rgba(0,1,5,0.4); padding: 16px;">
+            <h2>Hover Effects</h2>
+            <button style="padding: 10px; transition: background-color 0.3s ease;">
+                Hover over me
+            </button>
+            <style>
+                button:hover {
+                    background-color: var(--primary-color);
+                    color: white;
+                }
+            </style>
+        </section>
+    
+        <!-- Gradient Background Section -->
+        <section style="background: linear-gradient(to right, var(--primary-color), var(--secondary-color)); color: white;">
+            <h2>Gradient Background</h2>
+            <p>This section has a gradient background.</p>
+        </section>
+      </div>
+
+      <!-- Additional CSS Features -->
+      <section class="flex-container">
+      <!-- Box Shadow Section -->
+      <section style="box-shadow: 0 4px 8px rgba(0,1,5,0.4); padding: 16px;">
+          <h2>Box Shadow</h2>
+          <div style="box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 16px;">
+              This is a box with shadow.
+          </div>
+          <pre>
+            &lt;div style="box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 16px;"&gt;
+                This is a box with shadow.
+            &lt;/div&gt;
+          </pre>
+      </section>
+  
+      <!-- Text Shadow Section -->
+      <section style="box-shadow: 0 4px 8px rgba(0,1,5,0.4); padding: 16px;">
+          <h2>Text Shadow</h2>
+          <p style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+              This is text with shadow.
+          </p>
+          <pre>
+            &lt;p style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);"&gt;
+                This is text with shadow.
+            &lt;/p&gt;
+          </pre>
+      </section>
+        </section>
+
+      <!-- Footer -->
+      <footer class="flex-container">
+      <p>Copyright 2023</p>
+      </footer>
+
+</body>
+</html>

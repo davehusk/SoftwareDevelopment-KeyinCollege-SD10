@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrum and Trello Guide</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+      body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+      }
+      body.dark-mode .navbar-light .navbar-brand,
+      body.dark-mode .navbar-light .navbar-nav .nav-link,
+      body.dark-mode .navbar .form-check-label,
+      body.dark-mode footer,
+      body.dark-mode footer a,
+      body.dark-mode .btn-link {
+        color: #ffffff !important;
+      }
+      body.dark-mode .bg-light {
+        background-color: #242424 !important;
+        border-top: 1px solid #444;
+      }
+      body.dark-mode .accordion .card {
+        background-color: #2e2e2e;
+        border-color: #444;
+      }
+      body.dark-mode .accordion .card-header {
+        background-color: #1f1f1f;
+        border-color: #444;
+      }
+      body.dark-mode .accordion .card-header .btn-link {
+        color: #ffffff;
+      }
+      body.dark-mode .accordion .card-body {
+        color: #d3d3d3;
+      }
+    </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">QAP 3 | Project 2 -> Google</a>
+      <div class="ml-auto">
+            | Group 3: Dave Husk, Michael Fewer, Gabe Kroll | 
+      </div>
+      <div class="ml-auto">
+            <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                  <label class="form-check-label" for="darkModeToggle">Dark Mode</label>
+            </div>
+      </div>
+</nav>
+
+</div>
+<div class="container mt-5 mb-5">
+  <ul class="nav nav-tabs">
+      <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#introduction">Introduction</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#purpose">Purpose</a>
+      </li>
+  </ul>
+
+  <div class="tab-content mt-4 mb-4">
+      <div class="tab-pane fade show active" id="introduction">
+            <h2>Introduction</h2>
+            <p>Scrum and Trello are popular tools in the world of software development and project management. Here's a brief overview:</p>
+            <ul>
+                  <li><strong>Scrum:</strong> A framework that helps teams work together by organizing and managing tasks in short phases called sprints.</li>
+                  <li><strong>Trello:</strong> A visual tool where you can organize tasks using boards, lists, and cards – think of it like a digital bulletin board.</li>
+            </ul>
+      </div>
+      <div class="tab-pane fade" id="purpose">
+            <h2>Why Use Scrum and Trello Together?</h2>
+            <p>When combined, Scrum and Trello can be a powerful duo:</p>
+            <ul>
+                  <li>Scrum provides a structured approach to breaking down and completing tasks.</li>
+                  <li>Trello visualizes these tasks, making it easy to see progress and collaborate with team members.</li>
+            </ul>
+      </div>
+
+</div>
+
+<footer class="text-center py-4 mt-5 bg-light mb-4">
+      &copy; 2023 Scrum & Trello Guide. QAP 3
+      <a href="#" class="ml-2">Back to top</a>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+      const darkModeToggle = document.getElementById('darkModeToggle');
+      darkModeToggle.addEventListener('change', function() {
+      document.body.classList.toggle('dark-mode', this.checked);
+      });
+</script>
+
+</body>
+
+</html>

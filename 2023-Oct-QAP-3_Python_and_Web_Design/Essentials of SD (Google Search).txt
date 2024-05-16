@@ -1,0 +1,105 @@
+1. • In what year(s) was Cabot Tower built? What was done with the surplus bricks/stone? 
+
+`` SE Prompt: Cabot Tower construction year and surplus bricks usage
+
+-> Cabot Tower was built between 1897 and 1900 in 
+   St. John's, Newfoundland and Labrador, Canada. The surplus bricks 
+   and stone from the construction were used to build various structures 
+   in the city, including retaining walls and buildings.
+
+----
+
+
+2. • What was the original name of Mickey Mouse? 
+
+`` SE Prompt: Original name of Mickey Mouse
+
+-> The original name of Mickey Mouse was "Mortimer Mouse," but Walt 
+   Disney's wife, Lillian Disney, suggested changing it to "Mickey Mouse," 
+   which became the iconic name we know today.
+
+----
+
+
+3. • What is the current time in St. John’s, NL and Sydney, Australia? 
+
+`` SE Prompt: Current time in St. John's, NL and Sydney, Australia
+
+-> St. John's, NL, is in the Newfoundland Time Zone (NT), 
+   which is 3.5 hours behind Coordinated Universal Time (UTC-3:30).
+-> Sydney, Australia, is in the Australian Eastern Standard Time (AEST) 
+   zone, which is 10 hours ahead of UTC+10.
+
+----
+
+
+4. • What is the provincial bird, flower, and tree of NL? 
+
+`` SE Prompt: Newfoundland and Labrador provincial bird, flower, and tree
+
+-> Provincial bird: Atlantic Puffin
+-> Provincial flower: Purple Pitcher Plant
+-> Provincial tree: Black Spruce
+
+----
+
+
+5. • What is the depth of the Dead Sea? 
+
+`` SE Prompt: Depth of the Dead Sea
+
+-> The Dead Sea has a maximum depth of approximately 304 meters (997 feet).
+
+----
+
+
+6. • Who invented the Safety Pin? List other things he invented. 
+
+`` SE Prompt: Inventor of the Safety Pin and their other inventions
+
+-> The safety pin was invented by Walter Hunt in 1849. Some other 
+   inventions by him include the "Hunt's sewing machine" and 
+   improvements to the fountain pen.
+
+----
+
+
+7. • What does the Praying Mantis do after mating?
+
+`` SE Prompt: Praying Mantis mating behavior
+
+-> After mating, female praying mantises are known to sometimes 
+   consume the male. This behavior is more commonly observed in 
+   captivity than in the wild.
+
+----
+
+8. • What are the capitals of Mongolia and Croatia?
+
+`` SE Prompt: Capital of Mongolia and Croatia
+
+-> Ulaanbaatar, Mongolia
+-> Zagreb, Croatia
+
+----
+
+9. • List 3 movies that starred Will Smith.
+
+`` SE Prompt: Movies starring Will Smith
+
+-> "Men in Black"
+-> "Independence Day"
+-> "The Pursuit of Happyness"
+
+----
+
+10. • Where did the tradition of the Christmas tree come from?
+
+`` SE Prompt: Origin of the Christmas tree tradition
+
+-> The tradition of the Christmas tree is believed to have 
+   originated in Germany in the 16th century. It became 
+   popular in Europe and later spread to other parts of 
+   the world. It symbolizes the celebration of Christmas 
+   and is often decorated with lights, ornaments, and tinsel.
+
